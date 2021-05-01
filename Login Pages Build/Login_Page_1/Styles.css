@@ -1,0 +1,313 @@
+:root {
+    --text-color : white;
+    --major-color : #B765FF;
+    --secondrary-color : #F142FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+.CompanyMeta {
+    height: 41.66vh;
+    min-height: 300px;
+    background: url("./Assets/MobileBackground.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.CompanyLogo {
+    height: 14%;
+    display: flex;
+}
+
+.CompanyLogo a {
+    margin-left: 1rem;
+    font-size: 0.7rem;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 3px;
+}
+
+.CompanyLogo span:nth-child(1) {
+    font-size: 0.9rem;
+}
+
+.resLogo {
+    height: 100%;
+}
+
+.GeneralInfo {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.social {
+    height: 15%;
+    width: 100%;
+    
+}
+
+.social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.social li {
+    margin-left: 10px;
+}
+
+.loginform {
+    height: 58.34vh;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--major-color);
+}
+
+
+.SignupOption {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.SignupOption > button {
+    height: 100%;
+    width: 49%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.inactive {
+    background-color: var(--text-color);
+    color: var(--major-color);
+    border-color: var(--major-color);
+}
+
+.inactive:hover {
+    background-color: var(--secondrary-color);
+    color: white;
+}
+
+.active {
+    background-color: var(--secondrary-color);
+    color: white;
+    border-color: var(--secondrary-color);
+}
+
+.LoginFull, .SignUpFull {
+    display: none;
+}
+
+#LoginForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#LoginForm > input {
+    height: 3rem;
+    margin: 0.4rem 0px;
+    border-style: solid;
+    border-color: #D3D3D3;
+    text-indent: 1rem;
+}
+
+input:focus, input:active {
+    outline: none;
+    border-style: solid;
+    border-color : #D3D3D3;
+    border-left: 0.8rem solid var(--secondrary-color) !important;
+}
+
+
+.forgotPassword {
+    text-align: end;
+    font-size: 0.7rem;
+    left: 76%;
+}
+
+
+.SubmitBtn {
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.SubmitBtn > input {
+    width: 30%;
+    height: 2rem;
+    background-color: var(--text-color);
+    color: var(--major-color);
+    border: 3px solid var(--major-color);
+}
+
+.SubmitBtn > input:hover {
+    background-color: var(--major-color);
+    color: white;
+}
+
+.SocialLogo {
+    height: 30px;
+}
+
+.CompnayLogoFull {
+    display: none;
+}
+
+@media screen and (min-width : 992px) {
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .CompanyMeta {
+        height: 100%;
+        width: 48%;
+    }
+
+    .loginform {
+        height: 100%;
+        flex: 1;
+        justify-content: space-around;
+        padding : 1.5rem 8rem;
+    }
+
+    #LoginForm {
+        max-height: 45%;
+        justify-content: space-around;
+    }
+
+    .loginform h4 {
+        color: #474747;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .SignupOption {
+        display: none;
+    }
+
+    .SubmitBtn > input {
+        display: none;
+    }
+
+    .SubmitBtn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .LoginFull, .SignUpFull {
+        display: inline-block;
+        width: 25%;
+        font-size: 1.3rem;
+        font-weight: 500;
+        border-style: solid;
+        border-width: 4px;
+    }
+
+    .CompanyLogo {
+        display: none;
+    }
+
+    .CompnayLogoFull {
+        display: flex;
+        align-items: center;
+    }
+
+    .CompnayLogoFull a {
+        font-size: 1rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        color: #BE3EFF;
+        vertical-align: middle;
+    }
+
+    .subline {
+        font-size: 0.7rem;
+    }
+
+    .resLogo {
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    h1 {
+        text-align: start;
+        font-size: 2.5rem;
+    }
+
+    .GeneralInfo {
+        padding: 2rem 3rem;
+    }
+
+    .GeneralInfo > p {
+        text-align: start;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .CompanyMeta {
+        justify-content: center;
+    }
+
+    .social ul {
+        padding: 0px 3rem;
+        justify-content: start;
+    }
+
+    .CompanyMeta {
+        background: url("./Assets/WebDesktopBackground.png") no-repeat;
+    }
+
+    .social li {
+        margin-right: 30px;
+    }
+
+    .SocialLogo {
+        height: 50px;
+    }
+
+}
