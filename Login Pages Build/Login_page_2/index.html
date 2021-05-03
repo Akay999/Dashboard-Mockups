@@ -17,7 +17,7 @@
             <img src="/Assets/CompanyLogo.png" alt="Company Logo" height="80px" width="80px">
             <div class="Tagline">
                 <p>Comapny main Tagline</p>
-                <p> Company subtagline</p>
+                <!-- <p> Company subtagline</p> -->
             </div>
         </div>
 
@@ -64,5 +64,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+        gsap.from('.logContainer', {opacity : 0, duration : 1.5, y : -30, ease : 'expo'})
+    </script>
 </html>
