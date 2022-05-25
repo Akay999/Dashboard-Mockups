@@ -1,0 +1,12 @@
+.ProfileIcon {
+    width: 45px;
+    height: 45px;
+    background-image: url('../../../../assets/ProfileIcon.png');
+    background-size: cover;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+::ng-deep .mat-menu-panel {
+    margin-top: 10px;
+}

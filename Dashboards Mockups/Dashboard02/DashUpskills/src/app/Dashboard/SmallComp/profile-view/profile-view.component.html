@@ -1,0 +1,19 @@
+<div class="ProfileIcon mat-elevation-z2" [matMenuTriggerFor]="ProfileOptions"></div>
+<mat-menu #ProfileOptions="matMenu" xPosition="before" id="POp">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Contact Us</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check mail</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+    </button>
+</mat-menu>

@@ -1,0 +1,51 @@
+<main>
+    <section class="navMenus">
+        <div class="logo" #DashLogo routerLink='Employees'>
+            <img src="../../../assets/Logo.png" alt="Logo" [@fade]='trig()'>
+        </div>
+
+        <ul>
+            <li routerLink='Employees' routerLinkActive='Active' #EmpLi>
+                <i class="fas fa-id-card"></i>
+                <span>Employee</span>
+            </li>
+            <li routerLink='Role' routerLinkActive='Active' #RolLi>
+                <i class="fas fa-user-tag"></i>
+                <span>Role</span>
+            </li>
+            <li routerLink='CreateTraining' routerLinkActive='Active' #CtraiLi>
+                <i class="fas fa-user-plus"></i>
+                <span>Create Training</span>
+            </li>
+            <li routerLink='AssignTraining' routerLinkActive='Active' #AssgnLi>
+                <i class="fas fa-link"></i>
+                <span>Assign Training</span>
+            </li>
+            <li routerLink='TicketStatus' routerLinkActive='Active' #TktLi>
+                <i class="fas fa-clipboard-list"></i>
+                <span>Ticket Status</span>
+            </li>
+            <li routerLink='TrainingHistory' routerLinkActive='Active' #THisLi> 
+                <i class="fas fa-history"></i>
+                <span>Training History</span>
+            </li>
+            <li routerLink='Notifications' routerLinkActive='Active' #NotiLi>
+                <i class="fas fa-bullhorn"></i>
+                <span>Notifications</span>
+            </li>
+            <li routerLink='Feedback' routerLinkActive='Active' #FeedLi>
+                <i class="far fa-comment-dots"></i>
+                <span>Feecback Report</span>
+            </li>
+            <!-- <li>
+                <button mat-raised-button (click)='toggle()'>
+                    click
+                </button>
+            </li> -->
+        </ul>
+    </section>
+
+    <section class="OutletScreen" data-simplebar>
+        <router-outlet></router-outlet>
+    </section>
+</main>

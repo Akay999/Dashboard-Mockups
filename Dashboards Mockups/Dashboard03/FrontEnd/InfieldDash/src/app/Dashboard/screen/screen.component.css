@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #F7FAFF;
+    padding: 1rem;
+}
+
+.Navmenus {
+    height: 100%;
+    width: 17%;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavHead {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Limg {
+    height: 100%;
+    background-color: #3993EE;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.Logo span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.Profile {
+    width: 100%;
+    height: 40%;
+    color: whitesmoke;
+    background : linear-gradient(to right, #56CCF2, #2F80ED);
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.ProfileImg {
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+.DBOverv {
+    background-color: #3993EE;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.DBOverv > i {
+    margin-right: 1rem;
+}
+
+
+.OutletScreen {
+    flex: 1;
+    margin-left: 2rem;
+    background-color: white;
+    height: 100%;
+    border-radius: 30px;
+    padding: 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.NavList > div > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.NavList h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #2A3144;
+    opacity: 0.5;
+}
+
+.NavList i {
+    color : #2A3144;
+    opacity: 0.5;
+}
+
+.NavList ul li {
+    font-weight: 500;
+    font-size: 1rem;
+    text-indent: 15px;
+    color: #2A3144;
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.CreateRole > div > span:nth-child(1) {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.InputField {
+    transform: scale(0.9);
+}

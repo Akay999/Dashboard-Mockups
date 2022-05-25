@@ -1,0 +1,99 @@
+<main>
+    <nav class="headbar">
+        <div>
+            <h4>Dashboard Overview</h4>
+            <span> Today {{ dateObj }}</span>
+        </div>
+        <div>
+            <h5> {{empObj.name}} </h5>
+            <p> Role : {{empObj.Role}} </p>
+        </div>
+    </nav>
+
+    <section class="SummaryCards">
+        <mat-card id="Mt1">
+            <mat-card-header>
+                <mat-card-title>Outlets Registered</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <h1> {{OutObj.Count}} </h1>
+                <div class="CardAction">
+                    <span>In the Month of </span>
+                    <div>
+                        <span> {{OutObj.CurMonth}} </span>
+                        <div>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card id="Mt2">
+            <mat-card-header>
+                <mat-card-title>Visits Planned</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <h1> {{VisitObj.Count}} </h1>
+                <div class="CardAction">
+                    <span>In the Month of </span>
+                    <div>
+                        <span> {{VisitObj.CurMonth}} </span>
+                        <div>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card id="Mt3">
+            <mat-card-header>
+                <mat-card-title>Amount Collected</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <h1> ${{AmtObj.Count}} </h1>
+                <div class="CardAction">
+                    <span>In the Month of </span>
+                    <div>
+                        <span> {{AmtObj.CurMonth}} </span>
+                        <div>
+                            <i class="fas fa-caret-down" (click)='show()'></i>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <section class="ChartsOverview">
+        <div #VisitChart class="VisitsDone">
+            <ngx-charts-line-chart
+            [view]='dimen'
+            [scheme]="colorScheme"
+            [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxis]="xAxis"
+            [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            [timeline]="timeline"
+            [results]="data"
+            >
+            </ngx-charts-line-chart>
+        </div>
+
+        <div class="CompletionCircle">
+
+        </div>
+
+        <div class="OutFrequency">
+
+        </div>
+    </section>
+
+    <section class="PVtable">
+
+    </section>
+</main>

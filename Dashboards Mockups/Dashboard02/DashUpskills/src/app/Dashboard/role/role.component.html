@@ -1,0 +1,37 @@
+<main>
+    <section class="TNbar">
+        <div>
+            Role
+        </div>
+        <div>
+            <app-profile-view></app-profile-view>
+        </div>
+    </section>
+    <section class="CrtRole">
+        <mat-accordion id='RoleAcc'>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Create Role
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        *all fields are necessary
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="CreateRole">
+                    <div>
+                        <span>Role Name</span>
+                        <mat-form-field class='InputField' appearance="outline">
+                            <input matInput placeholder="Ex : Student...">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="Sbtn">
+                    <button mat-raised-button>
+                        Submit
+                    </button>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </section>
+</main>

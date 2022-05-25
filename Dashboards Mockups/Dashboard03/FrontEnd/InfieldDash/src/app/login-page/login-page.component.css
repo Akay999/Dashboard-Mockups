@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#LoginBck {
+    height: 60vh;
+}
+
+.Graphics {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFF;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--Ptext);
+}
+
+.Vectors {
+    text-align: center;
+}
+
+aside.Binfo {
+    width: 100%;
+    text-align: center;
+    color: var(--Ptext);
+    align-self: center;
+}
+
+aside.Binfo p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.Binfo > div:nth-child(3) {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1.5rem auto 0.5rem auto;
+    font-size: 1.4rem;
+    color: var(--Pblue);
+}
+
+.LoginForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 5rem 3rem 5rem;
+    justify-content: space-evenly;
+}
+
+.Formheading {
+    color: var(--Ptext);   
+}
+
+.Formheading h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.Formheading > p {
+    color: var(--Pblue);
+}
+
+.FormFields {
+    width: 100%;
+    height: 65%;
+    justify-content: space-evenly;
+    display: flex;
+    padding-right: 5rem;
+    flex-direction: column;
+}
+
+.FormFields > div:nth-child(4) {
+    text-align: center;
+}
+
+.FormFields > div:nth-child(4) > button {
+    background-color: var(--Pblue);
+    color: white;
+    border-radius: 20px;
+    padding: 0 2rem;
+}
+
+.newReg > a {
+    text-decoration: none;
+    color: #00C2FF;
+}

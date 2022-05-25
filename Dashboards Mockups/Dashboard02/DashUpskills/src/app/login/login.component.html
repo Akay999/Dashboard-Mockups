@@ -1,0 +1,43 @@
+<main class="DesktopView">
+    <section class="Desc">
+        <nav>
+            <img src="../../assets/Logo.png" alt="Logo" id="Logo" #Logo>
+            <h4 #SubHead>Get the Skills you always wanted</h4>
+        </nav>
+        <div class="imgCont">
+            <img src="../../assets/BGgraphic.png" alt="Graphic" id="Bggrph" #bgImg>
+        </div>
+        <section>
+            <h6>Trinity app lab Pvt. Ltd</h6>
+            <div class="SocIcons">
+                <a href="#" matTooltip='Facebook' #FbIcon> <i class="fab fa-facebook-f"></i> </a>
+                <a href="#" matTooltip='Instagram' #InstaIcon> <i class="fab fa-instagram"></i> </a>
+                <a href="#" matTooltip='Linked In' #LinkeinIcon> <i class="fab fa-linkedin-in"></i> </a>
+                <a href="#" matTooltip='Twitter' #TwitterIcon> <i class="fab fa-twitter"></i> </a>
+            </div>
+        </section>
+    </section>
+    
+    <section class="Form">
+        <div class="Heading">
+            <h3> Login </h3>
+            <p> welcome back to UpSkills. <br>
+                Login in with your UpSkills credentials. </p>
+        </div>
+        <mat-form-field action="#" appearance='legacy'>
+            <mat-label for="Username"> Username </mat-label>
+            <input type="text" matInput placeholder="for ex userid@gmail.com" id="Username">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="Password"> Password </mat-label>
+            <input matInput type="password" placeholder="Your Password" id='Password'>
+        </mat-form-field>
+        <div>
+            <mat-checkbox> Kepp me logged in</mat-checkbox>
+            <div class="SubButton">
+                <button mat-raised-button (click)="reverse()"> Sign In </button>
+            </div>
+        </div>
+        <div  class="NewAcc">Don't have an account ? <a href="#"> <span>Register</span> </a> </div>
+    </section>
+</main>

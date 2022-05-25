@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.Desc {
+    width: 60.5%;
+    background: -webkit-gradient(linear,left bottom,left top, from(#7F9AEC), to(#8178DF), color-stop(0.75, #8178DF));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Desc nav {
+    height: 15%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#Logo {
+    height: 40%;
+}
+
+.Desc h4 {
+    color: white;
+    margin-top: 0.7rem;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.imgCont {
+    height: 63%;
+    text-align: center;
+}
+
+#Bggrph {
+    height: 100%;
+}
+
+.Desc section:nth-child(3) {
+    height: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Desc h6{
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.SocIcons {
+    height: 60%;
+    width: 25%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SocIcons a {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.Form {
+    flex: 1;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+mat-label {
+    color: var(--primary1);
+}
+
+.Heading {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Heading h3 {
+    color: var(--primary1);
+    font-size: 1.6em;
+    margin-bottom: 0.7rem;
+}
+
+.Heading p {
+    color: var(--pBlue);
+}
+
+.SubButton {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.SubButton button {
+    background: linear-gradient(to bottom, #826FDC, #7CCAFF);
+    border-radius: 50px;
+    width: 120px;
+    color: white;
+}
+
+.NewAcc a {
+    text-decoration: none;
+    color: var(--pgreen);
+}
+
+mat-checkbox {
+    color: var(--primary1);
+    font-size: 0.9em;
+}
+
+.NewAcc {
+    color: #707070;
+    font-size: 0.9em;
+}
+
+/* IPAD SCREEN SIZE BREAKDOWN */
+
+@media only screen and (min-width : 768px) and (max-width : 1025px) {
+    .Desc {
+        width: 55%;
+    }
+
+    .imgCont {
+        height: 50%;
+    }
+
+    .SocIcons {
+        width: 40%;
+    }
+    
+}
+
+
+/* MOBILE VIEW STYLING */
+
+@media only screen and (max-width : 767px )  {
+    main {
+        flex-direction: column;
+    }
+
+    .Desc {
+        width: 100%;
+        height: 30%;
+    }
+
+    .Desc nav {
+        margin-top: 10px;
+        width: 100%;
+        height: 40%;
+        padding: 0 4rem;
+    }
+
+    #Bggrph {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        height: 50%;
+        z-index: -1;
+        opacity: 0.05;
+    }
+
+    .SocIcons {
+        position: absolute;
+        bottom: 0%;
+        background-color: var(--pBlue);
+        width: 100%;
+        height: 9%;
+        border-radius: 40px 40px 0 0;
+        padding: 10px 20%;
+    }
+
+    .Desc h6 {
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+        left: 34%;
+    }
+
+    .Form .Heading {
+        position: absolute;
+        top: 11%;
+        left: 4rem;
+    }
+
+    .Heading h3 {
+        color: white;
+        opacity: 0.9;
+    }
+
+    .Heading p {
+        color: white;
+        opacity: 0.6;
+    }
+}
